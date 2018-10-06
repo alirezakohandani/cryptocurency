@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>part9</h1>
+<div id="app">
+    <!--<task>go to the store</task>-->
+    <!--<task>go to the bank</task>-->
+    <!--<task>go to the doctor</task>-->
+    <task-list></task-list>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    Vue.component('task', {
+        template: '<li><slot><a href="#"></a></slot></li>'
+    });
+    Vue.component('task-list', {
+        template: `
+            <div>
+            <task v-for="task in tasks">
+            {{ task.body }}
+            </task>
+            </div>`,
+        data: function () {
+            return {
+                tasks: [
+                    { body: 'go to the store', complete: false },
+                    { body: 'go to the bank', complete: false},
+                    { body: 'go to the doctor', comlete: true},
+                ]
+            }
+        }
+    });
+    new Vue({
+        el: "#app",
+    });
+</script>
+</body>
+</html>

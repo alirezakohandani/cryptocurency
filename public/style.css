@@ -1,0 +1,19 @@
+.responsive {
+    width: 100%;
+    height: auto;
+}
+@font-face {
+    font-family: IranSans12;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.woff2);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.woff2);
+
+
+
+    font-weight: bold;
+}

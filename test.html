@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bin="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h2>part6(Directive)</h2>
+<div id="app" v-cloak="">
+<ul>
+    <li v-for="message in messages"><a href="#"> {{ message }}</a></li>
+</ul>
+    <br>
+    <a :href="url" :title="title">{{ url }}</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            messages: ['one', 'true', 'three', 'for'],
+            url: 'http://alirezakohandani.ir',
+            title: new Date()
+        }
+
+    });
+
+</script>
+</body>
+</html>

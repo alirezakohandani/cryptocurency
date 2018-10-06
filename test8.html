@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>part15</h1>
+<div id="app">
+    <coupon @applied="onApplied"></coupon>
+    <p v-if="onApplied">Applied</p>
+
+    <kirekhar @applied2="onAppliedd"></kirekhar>
+    <p v-if="onApp    liedd">kirekhar</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    window.Event = new Vue();
+
+    Vue.component('coupon', {
+        template: '<input placeholder="Enter yout copon" @blur="oncouponApplied">',
+        methods: {
+            oncouponApplied: function ()  {
+                Event.$emit('applied');//event dispatch
+
+            }
+        }
+    });
+    Vue.component('kirekhar', {
+        template: '<input placeholder="Enter kire khar" @blur="oncouponApplied">',
+        methods: {
+            oncouponApplied: function () {
+                Event.$emit('applied2');
+            }
+            }
+
+    })
+
+    new Vue({
+        el: '#app',
+
+        data: {
+          onApplied: false,
+            onAppliedd: false
+        },
+        created() {
+            Event.$on('applied', function () {
+                this.onApplied = true;
+            }.bind(this))
+
+            Event.$on('applied2', function () {
+                this.onAppliedd = true;
+            }.bind(this))
+        }
+    });
+</script>
+</body>
+</html>

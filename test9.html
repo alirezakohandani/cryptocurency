@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function sayhello(){
+            document.write('hello guys');
+        }
+        function concatinate(first, second) {
+            var full;
+            full = first + second;
+            return full;
+        }
+    loopp1:
+        for(i=0; i<7; i++) {
+
+                document.write('first for is :' + i + '<br>');
+               if(i == 6) break loopp1;
+
+                loopp:
+                for(j=0; j<4; j++) {
+                    document.write('second for is' + j + '<br>');
+                    if(j == 3) break loopp;
+            }
+        }
+        document.write('<br>');
+        sayhello();
+
+
+    </script>
+    <button type="button" onclick="sayhello()">click</button>
+    <script>
+       document.write('<br>');
+      result = concatinate('Alirez', 'Kohandani');
+      document.write(result + '<br>');
+      function over() {
+          document.write('Mouse Over');
+      }
+      function out() {
+          document.write('Mouse Out');
+      }
+    </script>
+    <div>
+        <!--<h2 onmouseover="over()" onmouseout="out()">Alireza kohanani</h2>-->
+    </div>
+</body>
+</html>

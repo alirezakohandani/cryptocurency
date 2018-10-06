@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="pathstrap/js/bootstrap.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="public/cryscript.js"></script>
+    <style>
+        button {
+            font-family: IranSans, serif;
+            font-size: 0.7em;
+        }
+    </style>
+
+
+</head>
+<body>
+<section style="background-color: #66818d">
+    <div class="container">
+        <div class="row">
+            <div><img style="width: 250px; padding-top: 13px" src="public/images/خرید-و-فروش-ارزهای-الکترونیکی.svg">
+            </div>
+            <div class="nav" style="width: 75%">
+                <div style="width: 80%; margin-left: 30px; padding-top: 30px; padding-bottom: 30px"
+                     class="input-group md-form form-sm form-1 pl-0">
+                    <div class="input-group-prepend">
+                        <span style="font-family: LightIranSans,serif" class="input-group-text purple lighten-3"
+                              id="basic-text1">جستجو<i class="fa fa-search text-white" aria-hidden="true"></i></span>
+                    </div>
+                    <input style="text-align: right; font-family: LightIranSans,serif" class="form-control my-0 py-1"
+                           type="text" placeholder="دنبال چی میگردی؟" aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section style="background-color: #E7E6E2; border-bottom: 1px solid #4F400C; border-top: 1px solid #4F400C; height: 60px">
+    <div class="container">
+        <div class="row" style="text-align: center">
+            <div class="col-md-12">
+                <ul style="font-family: IranSans,serif">
+                    <li style="float:right"><a href="#home" class="active" style="border: none">صفحه اصلی</a></li>
+                    <li><a href="#home" style="border: none">خرید بیت کوین</a></li>
+                    <li><a href="#news" style="border: none">بلاگ</a></li>
+                    <li><a href="#contact" style="border: none">تماس با ما</a></li>
+                    <li style="float: left"><a href="#" style="border: none" id="register" data-toggle="modal" data-target="#descModal1">ثبت نام</a></li>
+                    <li style="float: left"><img src="public/images/icons8-add-user-male-30.png" style="height: 30px; margin-top: 13px"></li>
+                    <li style="float: left "><a href="" style="border: none" id="login" data-toggle="modal" data-target="#descModal1-login">ورود</a></li>
+                    <li style="float: left"><img src="public/images/icons8-enter-26.png" style="height: 27px; margin-top: 15px"></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section style="background-color: white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="text-align: center; font-family: IranSans,serif; margin-top: 40px; color: #565a5c">بهترین قیمت بیت
+                    کوین و ارزهای دیجیتالی</h3>
+                <h5 style="text-align: center; font-family: IranSans,serif; color: #f63;">خرید و فروش آسان، اتوماتیک، سریع و
+                    ایمن بیت کوین و ارزهای دیجیتالی</h5>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section dir="rtl" style="background-color: white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-top: 40px">
+                <h4 style="text-align: right; font-family: IranSans,serif">پرداخت</h4>
+                <div class="buy">
+                        <select class="select1">
+                            <option value="sheta">شتاب</option>
+                            <option value="sheta">بیت کوین</option>
+                            <option value="sheta">اتریوم</option>
+
+                        </select>
+
+                    <input type="number" placeholder="مقدار پرداخت شما" class="number1">
+                    <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px">
+                <h4 style="text-align: right; font-family: IranSans,serif">دریافت</h4>
+                <div class="buy">
+                    <select style="width: 100%" class="select1">
+                        <option value="shetab">بیت کوین</option>
+                    </select>
+                    <input type="number" placeholder="مقدار دریافت شما" class="number1">
+                    <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 40px">
+                <h3 style="text-align: right; font-family: IranSans,serif">مبادله</h3>
+                <div class="buy">
+                    <p style="font-family: LightIranSans,serif; text-align: right; font-size: 0.8em">نرخ تبدیل: هر BTC برابر
+                        با 95,122,781 تومان</p>
+                    <button type="submit" value="خرید" style="font-family: IranSans,serif; color: white; width: 100%; border: none; padding: 13px; border-radius: 3px; background-color: #f63">خرید</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</section>
+<hr>
+<section style="background-color: #E7E6E2;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-top: 30px; background-image: url('public/images/download1.png')">
+                <div id="app1">
+                    <tabs>
+                        <tab name="About Us" selected="true">
+                            <h1>About</h1>
+                        </tab>
+                        <tab name="Contact">
+                            <h1>Contact</h1>
+                        </tab>
+                        <tab name="Blog">
+                            <h1>Blog</h1>
+                        </tab>
+                    </tabs>
+                </div>
+            </div>
+            <div style="margin-top: 30px; border-top: none; border-left: none; border-color: #4F400C; border-right: none;margin-left: -16px"
+                 class="col-md-8 anyClass">
+                <canvas id="myChart" style="border-radius: 3px"></canvas>
+                <hr>
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section style="background-color: white;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9" style="border: 2px solid rgba(0,0,0,.5); margin-top: 39px; border-radius: 3px;">
+
+                <h4 style="text-align: center; font-family: BoldIranSans,serif; padding-top: 20px">قیمت لحظه ای ارزهای دیجیتال</h4>
+                <hr>
+                <div>
+                    <div style="border: 1px solid #66818d; border-radius: 3px; line-height: 3">
+                        <div class="row">
+                            <div class="col-md-4" style="margin-left: 65px; font-family: IranSans,serif; font-size: 0.8em">
+
+                                <ul style="background-color: white; padding: 10px">
+                                    <li>حجم کل بازار : 200.02 میلیارد دلار</li>
+                                    <li>سهم بیت کوین از کل بازار : 55.54</li>
+                                    <li>نرخ دلار محاسباتی : 14,250 تومان</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4" style="margin-left: 150px; padding: 10px; font-family: IranSans,serif; font-size: 0.8em ">
+                                <ul style="background-color: white">
+                                    <li>تعداد ارزهای دیجیتال : 1,960</li>
+                                    <li>بازارهای فعال : 13,906</li>
+                                    <li>حجم کل بازار : 200.02 میلیارد دلار</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px">
+                    <div class="col-md-4">
+                        <div class="online-price">
+                        <h5 style="padding-top: 10px" class="center-image">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="3: 30px" alt="" width="30" height="30" align="left"></h5>
+                        <hr>
+                        <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                        <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                        <hr>
+                        <img src="public/images/crypto.png" class="center-image">
+                        <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                        <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px">رویدادها</button>
+                        <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                        <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="online-price">
+                            <h5 class="center-image" style="padding-top: 10px">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="margin-left: 30px" alt="" width="30" height="30" align="left"></h5>
+                            <hr>
+                            <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                            <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                            <hr>
+                            <img src="public/images/crypto.png" class="center-image">
+                            <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px">رویدادها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="online-price">
+                            <h5 class="center-image" style="padding-top: 10px">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="margin-left: 30px" alt="" width="30" height="30" align="left"></h5>
+                            <hr>
+                            <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                            <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                            <hr>
+                            <img src="public/images/crypto.png" class="center-image">
+                            <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px">رویدادها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="online-price">
+                            <h5 class="center-image" style="padding-top: 10px">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="margin-left: 30px" alt="" width="30" height="30" align="left"></h5>
+                            <hr>
+                            <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                            <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                            <hr>
+                            <img src="public/images/crypto.png" class="center-image">
+                            <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px;">رویدادها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="online-price">
+                            <h5 class="center-image" style="padding-top: 10px">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="margin-left: 30px" alt="" width="30" height="30" align="left"></h5>
+                            <hr>
+                            <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                            <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                            <hr>
+                            <img src="public/images/crypto.png" class="center-image">
+                            <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px">رویدادها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="online-price">
+                            <h5 class="center-image" style="padding-top: 10px">bitcoin<img src="public/images/if_Bitcoin_272914.svg" style="margin-left: 30px" alt="" width="30" height="30" align="left"></h5>
+                            <hr>
+                            <h5 style="text-align: center; font-family: IranSans,serif">$6500</h5>
+                            <h6 style="text-align: center; font-family: IranSans,serif">تومان89,785,118 </h6>
+                            <hr>
+                            <img src="public/images/crypto.png" class="center-image">
+                            <p style="font-size: 0.7em; text-align: center; font-family: IranSans,serif">حجم بازار : 7 میلیارد</p>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em; margin-left: 8px">رویدادها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">کیف پول ها</button>
+                            <button type="button" style="font-family: IranSans,serif; font-size: 0.7em">تحلیل هفتگی</button>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 30px" class="col-md-6">
+                    <button class="btn-dark online-price-button" type="button" style="padding: 10px">مشاهده لیست کامل</button>
+                    </div>
+                    <div class="col-md-6">
+                    <button class="btn-dark online-price-button" style="padding: 10px">مبدل ارزهای دیجیتال</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div style="border: 2px solid rgba(0,0,0,.5); margin-top: 40px">
+                    <h6 style="text-align: center; font-family: BoldIranSans,serif; padding-top: 10px">معرفی ارزهای دیجیتال</h6>
+                    <hr>
+                <table style="width: 80%; margin-left: 55px">
+                    <tr>
+                        <td style="font-family: IranSans,serif; font-size: 0.8em; padding-bottom: 20px">
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                                <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+                            <button type="button">بیت کوین</button>
+
+
+                        </td>
+                    </tr>
+                </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer dir="rtl" style="background-color: #66818d; margin-top: 30px; background-image: url('public/images/download1.png'); border-top-width: 2px;border-top-style: solid;border-top-color: rgba(0,0,0,.5);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+             <h5 style="text-align: right; font-family: IranSans,serif; margin-top: 20px; color: #f63">خدمات ما</h5>
+                <hr>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+
+            </div>
+            <div class="col-md-4">
+                <h5 style="text-align: right; font-family: IranSans,serif; margin-top: 20px; color: #f63">راهنمای خرید از ما</h5>
+                <hr>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+                <p style="text-align: right; font-family: IranSans,serif; color: white">خرید بیت کوین</p>
+            </div>
+            <div class="col-md-4">
+                <h5 style="text-align: right; font-family: IranSans,serif; margin-top: 20px; color: #f63">با ما همراه شوید:</h5>
+                <hr>
+                <div class="row">
+                <img src="public/images/twitter-logo-button.svg">
+                    <img src="public/images/instagram-logo.svg" style="margin-right: 3px">
+                    <img src="public/images/facebook-logo-button.svg" style="margin-right: 3px">
+                    <img src="public/images/google-plus-logo-button.svg" style="margin-right: 3px">
+                </div>
+                <img src="public/images/electronic.jpg" style="height: 35%; margin-top: 20px; position: relative; left: 240px">
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+
+<div class="modal fade bd-example-modal-lg" id="descModal1" role="dialog" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <br>
+            </div>
+            <div id="app" class="modal-body">
+                <img src="public/images/خرید-و-فروش-ارزهای-الکترونیکی.svg" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
+                <p style="text-align: center; font-family: BoldIranSans,serif">عضویت در ایکس تومان</p>
+                <register title="نام"></register>
+                <register title="نام خانوادگی"></register>
+                <register title="ایمیل"></register>
+                <register title="شماره تلفن"></register>
+                <register title="کد ملی"></register>
+                <register title="پسورد"></register>
+                <register title="تکرار پسورد"></register>
+                <p style="text-align: right; font-family: BoldIranSans,serif">توضیحات</p>
+                <textarea style="font-family: IranSans; text-align: right" class="form-control" placeholder="توضیحات"></textarea>
+                <p style="font-family: IranSans,serif; text-align: right">لطفا عکس خود را بازگزاری نمایید</p>
+                <form align="right">
+                    <input type="file" name="fileupload" accept="image/svg+xml">
+                </form>
+                <button type="submit" class="btn btn-success" style="width: 100%; font-family: BoldIranSans,serif">ثبت نام</button>
+            </div>
+            <div class="modal-footer">
+                <button style="font-family: IranSans" type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- modal for login -->
+<div class="modal fade bd-example-modal-lg" id="descModal1-login" role="dialog" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <br>
+            </div>
+            <div class="modal-body">
+                <img src="public/images/خرید-و-فروش-ارزهای-الکترونیکی.svg" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
+                <p style="font-family: IranSans,serif; text-align: right"> نام کاربری</p>
+                <input type="text" style="text-align: right; font-family: IranSans,serif"; id="username1" class="form-control" placeholder="لطفا نام کاربری خود را وارد نمایید.">
+                <p style="text-align: right; font-family: BoldIranSans,serif">توضیحات</p>
+                <textarea style="font-family: IranSans; text-align: right" class="form-control" placeholder="توضیحات"></textarea>
+                <p style="font-family: IranSans,serif; text-align: right">لطفا عکس خود را بازگزاری نمایید</p>
+                <form align="right">
+                    <input type="file" name="fileupload" accept="image/svg+xml">
+                </form>
+                <button type="submit" class="btn btn-success" style="width: 100%; font-family: BoldIranSans,serif" onclick="username1()">ثبت نام</button>
+            </div>
+            <div class="modal-footer">
+                <button style="font-family: IranSans" type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    Vue.component('register', {
+        props: ['title','pho'],
+        template: `
+<main>
+
+                <p style="text-align: right; font-family: BoldIranSans,serif">{{ title }}</p>
+                <input class="form-control" type="text" placeholder="" >
+
+     </main>
+        `,
+    })
+    new Vue({
+        el: '#app',
+
+    })
+</script>
+<script>
+    Vue.component('tabs',{
+        template: `
+<main>
+        <div class="tabs">
+    <ul>
+       <li v-for="tab in tabs" :class="{'is-active' : tab.isActive}">
+       <a @click="selectTab(tab)" :href="tab.href">{{ tab.name }}</a>
+       </li>
+    </ul>
+</div>
+<div class="tab-details">
+<slot></slot>
+</div>
+      </main>  `,
+
+        data: function () {
+            return {
+                tabs: []
+            };
+        },
+
+        //mounted yani inke hameye ina mounte shod savar javascript shod va hameye ina oumad bala
+        //mounted ra avaz mikonim be created yani inke harmoghe sakhte shod bia bara man inkaro anjam bede
+        created(){
+//            console.log(this.$children)
+            this.tabs = this.$children;
+        },
+        methods: {
+            selectTab: function(selectTab) {
+                this.tabs.forEach(function(tab) {
+                    tab.isActive = (tab.name == selectTab.name)
+
+                });
+            }
+        }
+    });
+
+    Vue.component('tab', {
+        props: {
+            name: {
+                required: true
+            },
+            selected: {
+                default: false,
+            }
+        },
+        template: `
+        <div v-show="isActive"><slot></slot></div>
+        `,
+        computed: {
+            href() {
+                return '#' + this.name.toLocaleLowerCase().replace(/ /g, '-')
+            }
+        },
+        data: function () {
+            return {
+                isActive: false,
+            }
+        },
+        mounted() {
+            this.isActive = this.selected;
+        }
+    })
+        </script>
+ <script>
+     new Vue({
+         el: '#app1',
+     })
+ </script>
+<script>
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+            datasets: [{
+                label: "نمودار قیمت بیت کوین",
+                backgroundColor: "#66818d",
+                borderColor: '#565a5c',
+                data: [5000, 3000, 6000, 9000, 6000, 1000, 10000],
+            }]
+        },
+        // Configuration options go here
+        options: {
+            legend: {
+                labels: {
+                    // This more specific font property overrides the global property
+                    fontFamily: 'IranSans',
+                    fontColor: '#565a5c',
+
+                }
+            }
+        }
+    });
+    var ctx = document.getElementById('myChart1').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+            datasets: [{
+                label: "نمودار قیمت بیت کوین",
+                backgroundColor: '#66818d',
+                borderColor: '#565a5c',
+                data: [5000, 3000, 6000, 9000, 6000, 14000, 10000],
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+    var ctx = document.getElementById('myChart2').getContext('2d');
+
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'pie',
+
+        // The data for our dataset
+        data: {
+            datasets: [{
+                data: [10, 20, 30]
+            }],
+
+            // These labels appear in the legend and in the tooltips when hovering different arcs
+            labels: [
+                'Red',
+                'Yellow',
+                'Blue'
+            ]
+        },
+
+        // Configuration options go here
+        options: {
+            cutoutPercentage: '50',
+            rotation: '-0.5 * Math.PI',
+            circumference: '2 * Math.PI',
+
+
+        }
+    });
+</script>
+
+
+</body>
+</html>

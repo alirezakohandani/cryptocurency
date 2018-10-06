@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/js/bootstrap.min.js">
+</head>
+<body>
+<h1>part7</h1>
+<div id="app">
+    <ul class="list-group">
+        <li v-for="plan in plans">
+            <plan :plan="plan" @acticve="setActive(plan)" :active="actived"></plan>
+        </li>
+    </ul>
+</div>
+<template id="plan-template">
+    <div>
+        {{ plan.name }}: ${{ plan.price }} -
+        <button @click="active" v-if="!isActive" class="btn btn-primary btn-sm">
+            {{ isUpgrade ? 'Upgrade' : 'Downgrade' }}
+        </button>
+        <button v-else class="btn btn-primary btn-sm" disabled>
+            selected
+        </button>
+    </div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            plans: [
+                { name: "Ultimate", price: 500},
+                { name: "Expert", price: 100},
+                { name: "Professiona", price: 50},
+                { name: "Simple", price: 10},
+                { name: "Free", price: 0},
+            ],
+            actived: {
+
+            },
+            components: {
+                 plan: {
+                     template: "#plan-template",
+                     props: ['plan', 'active'],
+                     methods: {
+                         this.$emit('activate', this.plan),
+                     }
+                 },
+                 computed: {
+                     isActive: function () {
+                        return (this.active == this.plan);
+                     },
+                     isUpgrade: function() {
+                         return (this.active.price < this.plan.price)
+                     }
+                 }
+            }
+        }
+    })
+</script>
+</body>
+</html>

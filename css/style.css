@@ -1,0 +1,127 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E7E6E2;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border: 1px solid #4F400C;
+}
+li a:hover {
+    color: #565a5c;
+}
+.active {
+    /*background-color: #4F400C;*/
+    color: rgba(0,0,0,.5);
+}
+
+/*  for chart */
+.anyClass {
+    height:365px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    margin-top: 6px;
+}
+/* for change money */
+.buy {
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #565a5c;
+    border-radius: 4px;
+}
+
+@font-face {
+    font-family: BoldIranSans;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Bold-web.woff2);
+}
+@font-face {
+    font-family: LightIranSans;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Light-web.woff2);
+}
+@font-face {
+    font-family: MediumIranSans;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Medium-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Medium-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Medium-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-Medium-web.woff2);
+}
+@font-face {
+    font-family: UltraLightIranSans;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-UltraLight-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-UltraLight-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-UltraLight-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-UltraLight-web.woff2);
+}
+@font-face {
+    font-family: IranSans;
+    src: url(../public/fonts/new-font/IranSans/IRANSans-web.eot);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-web.ttf);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-web.woff);
+    src: url(../public/fonts/new-font/IranSans/IRANSans-web.woff2);
+}
+/* for input number */
+.number1 {
+    width: 80%;
+    margin-top: 5px;
+    background-color: #ebf1f4;
+    border: none; font-size: 0.8rem;
+    font-family: IranSans;
+    color: #565a5c;
+    line-height: 2;
+    padding: .5rem 1rem
+}
+.select1 {
+    width: 100%;
+    padding: 5px;
+    font-family: IranSans;
+}
+
+/* for box in online price */
+
+.online-price {
+    width: 98%;
+    border: 1px solid #66818d;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+}
+/* for button in online price */
+.online-price-button {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    margin-top: 15px;
+    font-family: IranSans;
+    color: white;
+    padding: 7px;
+}
+/* for introduction digital */
+
+.intro_digital_a_tag{
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #ebf1f4;
+}
+/*for putting up image in center*/
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

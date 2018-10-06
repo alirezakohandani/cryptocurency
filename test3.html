@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>part8</h1>
+<div id="app">
+    <!--in the first ul we use array to arrive to the answer and this way is best way
+    be in karyi ke ma anjam dadim html hast va kari ghadimi ast ke behesh migan triditional way-->
+<ul>
+    <li :class="[task.completed ? 'completed' : '' , 'pointer']" v-for="task in tasks" @click="togglecompleted(task)">
+        {{ task.body }}
+    </li>
+</ul>
+    <!--in the second ul we use object to arrive to the answer. for time you have one class-->
+    <!--<ul>-->
+        <!--<li v-for="task in tasks" :class="{'completed' : task.completed}">-->
+            <!--{{ task.body }}-->
+        <!--</li>-->
+    <!--</ul>-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    //object ham bayad yedoune key dashte bashe ham ye value
+    new Vue({
+        el: "#app",
+        data: {
+            tasks: [
+                { body:'Go to the restaurants', completed: false},
+                { body: 'Go to the shopping center', completed: false},
+                { body: 'Go to the bank', completed: true}
+            ],
+
+        },
+        methods: {
+            togglecompleted: function(task){
+               return task.completed = ! task.completed;
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

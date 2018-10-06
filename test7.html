@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+<body>
+<h1>part14 (very Important!!)</h1>
+<div id="app">
+    <!--@applied ina yek event mibashad-->
+    <coupon @applied="onCouponApplied"></coupon>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+
+    Vue.component('coupon', {
+        template: '<input placeholder="Enter your coupon" @blur="onCouponApplied1">',
+        methods: {
+            onCouponAppliedd1() {
+                this.$emit('applied');
+            }
+        }
+    });
+//onCouponApplied mishe ertebati beyne component e ma va root vue instance ma
+    new Vue({
+        el: '#app',
+        methods: {
+            onCouponApplied: function () {
+              alert('Alert from root')
+            },
+        }
+    });
+</script>
+</body>
+</html>
