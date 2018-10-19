@@ -12,14 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="public/cryscript.js"></script>
-    <style>
-        button {
-            font-family: IranSans, serif;
-            font-size: 0.7em;
-        }
-    </style>
-
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
 </head>
 <body>
 <section style="background-color: #66818d">
@@ -89,7 +83,7 @@
 
                         </select>
 
-                    <input type="number" placeholder="مقدار پرداخت شما" class="number1">
+                    <input type="number" placeholder="مقدار پرداخت شما" class="number1" name="change">
                     <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
                 </div>
             </div>
@@ -99,7 +93,7 @@
                     <select style="width: 100%" class="select1">
                         <option value="shetab">بیت کوین</option>
                     </select>
-                    <input type="number" placeholder="مقدار دریافت شما" class="number1">
+                    <input type="number" placeholder="مقدار دریافت شما" class="number1" value="y">
                     <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
                 </div>
             </div>
@@ -367,10 +361,10 @@
                 <h5 style="text-align: right; font-family: IranSans,serif; margin-top: 20px; color: #f63">با ما همراه شوید:</h5>
                 <hr>
                 <div class="row">
-                <img src="public/images/twitter-logo-button.svg">
-                    <img src="public/images/instagram-logo.svg" style="margin-right: 3px">
-                    <img src="public/images/facebook-logo-button.svg" style="margin-right: 3px">
-                    <img src="public/images/google-plus-logo-button.svg" style="margin-right: 3px">
+                    <img class="icon" src="public/images/twitter-logo-button.svg">
+                    <img class="icon" src="public/images/instagram-logo.svg" style="margin-right: 3px">
+                    <img class="icon" src="public/images/facebook-logo-button.svg" style="margin-right: 3px">
+                    <img class="icon" src="public/images/google-plus-logo-button.svg" style="margin-right: 3px">
                 </div>
                 <img src="public/images/electronic.jpg" style="height: 35%; margin-top: 20px; position: relative; left: 240px">
             </div>
@@ -392,6 +386,10 @@
                 <p style="text-align: center; font-family: BoldIranSans,serif">عضویت در ایکس تومان</p>
                 <register title="نام"></register>
                 <register title="نام خانوادگی"></register>
+                <form ng-app="" name="myForm">
+                    <input type="email" name="myAddress" ng-model="text">
+                    <span ng-show="myForm.myAddress.$error.email">Not valid</span>
+                </form>
                 <register title="ایمیل"></register>
                 <register title="شماره تلفن"></register>
                 <register title="کد ملی"></register>
@@ -406,7 +404,9 @@
                 <button type="submit" class="btn btn-success" style="width: 100%; font-family: BoldIranSans,serif">ثبت نام</button>
             </div>
             <div class="modal-footer">
-                <button style="font-family: IranSans" type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                <button style="font-family: IranSans,serif" type="button" class="btn btn-default" data-dismiss="modal">
+                    بستن
+                </button>
             </div>
         </div>
 
@@ -453,7 +453,7 @@
 
      </main>
         `,
-    })
+    });
     new Vue({
         el: '#app',
 
