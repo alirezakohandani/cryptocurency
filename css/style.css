@@ -1,9 +1,142 @@
+span {
+    font-family: LightIranSans, serif;
+}
+
+.search-box {
+    text-align: right;
+    font-family: LightIranSans, serif;
+}
+
+.secondSection {
+    background-color: #E7E6E2;
+    border-bottom: 1px solid #4F400C;
+    border-top: 1px solid #4F400C;
+    height: 60px;
+}
+
+rowInSecondSection {
+    text-align: center;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #E7E6E2;
+    font-family: IranSans, serif;
+}
+
+.a_InSecondSection {
+    border: none;
+}
+
+.SingUp-SingIn {
+    float: left;
+}
+
+.Image_sign {
+    height: 30px;
+    margin-top: 13px;
+}
+
+/* third section */
+.fuck {
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+
+}
+
+@-webkit-keyframes example {
+    from {
+        left: -1100px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+.fuck2 {
+    position: relative;
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 4s;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example2 {
+    from {
+        right: -1100px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+/* fourth section */
+.fuck3 {
+    position: relative;
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+
+}
+
+@-webkit-keyframes example3 {
+    from {
+        right: -1100px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+.fuck4 {
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: example4;
+    -webkit-animation-duration: 4s;
+    animation-name: example4;
+    animation-duration: 4s;
+
+}
+
+@-webkit-keyframes example4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fuck5 {
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: example5;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: example5;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+
+}
+
+@-webkit-keyframes example5 {
+    from {
+        left: -1100px;
+    }
+    to {
+        left: 0px;
+    }
 }
 li {
     float: right;

@@ -14,43 +14,54 @@
     <script src="public/cryscript.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 <section style="background-color: #66818d">
     <div class="container">
         <div class="row">
-            <div><img style="width: 250px; padding-top: 13px" src="public/images/خرید-و-فروش-ارزهای-الکترونیکی.svg">
+            <div><img style="width: 250px; padding-top: 13px" src="public/images/xtoman.svg">
             </div>
             <div class="nav" style="width: 75%">
                 <div style="width: 80%; margin-left: 30px; padding-top: 30px; padding-bottom: 30px"
                      class="input-group md-form form-sm form-1 pl-0">
                     <div class="input-group-prepend">
-                        <span style="font-family: LightIranSans,serif" class="input-group-text purple lighten-3"
-                              id="basic-text1">جستجو<i class="fa fa-search text-white" aria-hidden="true"></i></span>
+                        <span class="input-group-text purple lighten-3" id="basic-text1">جستجو<i
+                                class="fa fa-search text-white" aria-hidden="true"></i></span>
                     </div>
-                    <input style="text-align: right; font-family: LightIranSans,serif" class="form-control my-0 py-1"
-                           type="text" placeholder="دنبال چی میگردی؟" aria-label="Search">
+                    <input class="form-control my-0 py-1 search-box" type="text" placeholder="دنبال چی میگردی؟"
+                           aria-label="Search">
                 </div>
             </div>
         </div>
     </div>
 
 </section>
-<section style="background-color: #E7E6E2; border-bottom: 1px solid #4F400C; border-top: 1px solid #4F400C; height: 60px">
+<section class="secondSection">
     <div class="container">
-        <div class="row" style="text-align: center">
+        <div class="row rowInSecondSection">
             <div class="col-md-12">
-                <ul style="font-family: IranSans,serif">
-                    <li style="float:right"><a href="#home" class="active" style="border: none">صفحه اصلی</a></li>
-                    <li><a href="#home" style="border: none">خرید بیت کوین</a></li>
-                    <li><a href="#news" style="border: none">بلاگ</a></li>
-                    <li><a href="#contact" style="border: none">تماس با ما</a></li>
-                    <li style="float: left"><a href="#" style="border: none" id="register" data-toggle="modal" data-target="#descModal1">ثبت نام</a></li>
-                    <li style="float: left"><img src="public/images/icons8-add-user-male-30.png" style="height: 30px; margin-top: 13px"></li>
-                    <li style="float: left "><a href="" style="border: none" id="login" data-toggle="modal" data-target="#descModal1-login">ورود</a></li>
-                    <li style="float: left"><img src="public/images/icons8-enter-26.png" style="height: 27px; margin-top: 15px"></li>
+                <ul>
 
-
+                    <li style="float:right"><a href="#home" class="active a_InSecondSection">صفحه اصلی</a></li>
+                    <li><a href="#Buy" class="a_InSecondSection">خرید بیت کوین</a></li>
+                    <li><a href="#news" class="a_InSecondSection">بلاگ</a></li>
+                    <li><a href="#contact" class="a_InSecondSection">تماس با ما</a></li>
+                    <li class="SingUp-SingIn">
+                        <a href="#sign_up" style="border: none" id="register" data-toggle="modal"
+                           data-target="#descModal1">ثبت نام</a>
+                    </li>
+                    <li class="SingUp-SingIn">
+                        <img src="public/images/icons8-add-user-male-30.png" class="Image_sign">
+                    </li>
+                    <li class="SingUp-SingIn">
+                        <a href="#sign_in" style="border: none" id="login" data-toggle="modal"
+                           data-target="#descModal1-login">ورود</a>
+                    </li>
+                    <li class="SingUp-SingIn">
+                        <img src="public/images/icons8-enter-26.png" class="Image_sign">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,9 +72,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 style="text-align: center; font-family: IranSans,serif; margin-top: 40px; color: #565a5c">بهترین قیمت بیت
+
+                <h3 class="fuck" style="font-family: IranSans,serif; margin-top: 40px; color: #565a5c">بهترین قیمت بیت
                     کوین و ارزهای دیجیتالی</h3>
-                <h5 style="text-align: center; font-family: IranSans,serif; color: #f63;">خرید و فروش آسان، اتوماتیک، سریع و
+
+                <h5 class="fuck2" style="text-align: center; font-family: IranSans,serif; color: #f63;">خرید و فروش
+                    آسان، اتوماتیک، سریع و
                     ایمن بیت کوین و ارزهای دیجیتالی</h5>
             </div>
         </div>
@@ -73,7 +87,7 @@
 <section dir="rtl" style="background-color: white">
     <div class="container">
         <div class="row">
-            <div class="col-md-4" style="margin-top: 40px">
+            <div class="col-md-4 fuck3" style="margin-top: 40px">
                 <h4 style="text-align: right; font-family: IranSans,serif">پرداخت</h4>
                 <div class="buy">
                         <select class="select1">
@@ -87,7 +101,7 @@
                     <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
                 </div>
             </div>
-            <div class="col-md-4" style="margin-top: 40px">
+            <div class="col-md-4 fuck4" style="margin-top: 40px">
                 <h4 style="text-align: right; font-family: IranSans,serif">دریافت</h4>
                 <div class="buy">
                     <select style="width: 100%" class="select1">
@@ -97,12 +111,15 @@
                     <span style="font-family: IranSans,serif; background-color: #66818d; color: white; padding: 3px; border-radius: 3px">تومان</span>
                 </div>
             </div>
-            <div class="col-md-4" style="margin-top: 40px">
+            <div class="col-md-4 fuck5" style="margin-top: 40px">
                 <h3 style="text-align: right; font-family: IranSans,serif">مبادله</h3>
                 <div class="buy">
                     <p style="font-family: LightIranSans,serif; text-align: right; font-size: 0.8em">نرخ تبدیل: هر BTC برابر
                         با 95,122,781 تومان</p>
-                    <button type="submit" value="خرید" style="font-family: IranSans,serif; color: white; width: 100%; border: none; padding: 13px; border-radius: 3px; background-color: #f63">خرید</button>
+                    <button class="buy-button" type="submit" value="خرید"
+                            style="font-family: IranSans,serif; color: white; width: 100%; border: none; padding: 13px; border-radius: 3px; background-color: #f63">
+                        خرید
+                    </button>
                 </div>
             </div>
         </div>
